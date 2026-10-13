@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Kitchen</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <!-- Student Kitchen Brand -->
+<header class="brand-header">
+    <div class="brand-title">
+        <span class="chef-cap"></span>
+        <span class="student-text">Smart</span>
+        <span class="kitchen-text">Kitchen</span>
+    </div>
+</header>
+
+<!-- Navigation Bar -->
+<nav c class="top-navbar">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="Student Kitchen">
+    </a>
+
+    <!-- SEARCH BAR -->
+    <div class="nav-search">
+        <span>🔍</span>
+        <input type="text" placeholder="Search recipes...">
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="veg.html">Veg</a>
+        <a href="nonveg.html">Non-Veg</a>
+        <a href="Mithaivala.html">Sweet</a>
+        <a href="Snacks.html">Snack</a>
+        <a href="Tiffins.html">Tiffin</a>
+        <a href="Pickels.html">Pickles</a>
+        <a href="grocery.html">Grocery</a>
+        <details class="menu-container">
+
+            <summary>☰ Menu</summary>
+
+            <div class="menu-box">
+
+                <a href="profile.html">⚙️ Settings</a>
+                <a href="profile.html">❤️ Wishlist</a>
+                <a href="profile.html">🔖 Saved Recipes</a>
+                <a href="profile.html">🕒 Recently Viewed</a>
+                <a href="#">🌐 Language</a>
+                <a href="#">🔔 Notifications</a>
+                <a href="#">❓ Help & Support</a>
+                <a href="#">🚪 Logout</a>
+
+            </div>
+
+        </details>
+
+    </div>
+
+</nav>
+<main>
+<!-- HERO -->
+
+<section class="hero">
+
+    <div>
+
+        <h2>What are you cooking today? 🍴</h2>
+
+        <p>
+            Find recipes, discover groceries and get
+            cooking ideas for every day.
+        </p>
+
+        <a href="veg.html" class="main-btn">
+            Explore Recipes →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- AI -->
+
+<section class="ai-section">
+
+    <h2>🤖 Ask Student Kitchen AI</h2>
+
+    <p>
+        Ask anything about recipes, ingredients or cooking.
+    </p>
+
+    <div class="ai-box">
+
+        <input
+            type="text"
+            id="aiQuestion"
+            placeholder="Example: I have rice and tomato. What can I cook?"
+        >
+
+        <button onclick="askAI()">Ask AI</button>
+
+    </div>
+
+    <div id="aiAnswer" class="ai-answer"></div>
+
+</section>
+
+
+<!-- QUICK RECIPES -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>⚡ Quick Recipes</h2>
+
+        <p>
+            Easy recipes when you don't have much time.
+        </p>
+
+    </div>
+
+
+    <div class="home-recipes">
+
+
+        <!-- TOMATO RICE -->
+
+        <article class="home-card">
+
+            <img
+                src="https://i.pinimg.com/1200x/f6/89/c2/f689c2a15bf870184d6ce06c854c6e4c.jpg"
+                alt="Tomato Rice"
+            >
+
+            <div class="card-content">
+
+                <span class="tag">VEG</span>
+
+                <h3>🍚 Tomato Rice</h3>
+
+                <p>
+                    Simple and tasty rice recipe.
+                </p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱️ 20 min</span>
+
+                    <span>⭐ Easy</span>
+
+                </div>
+
+                <a href="veg.html" class="view-btn">
+                    View Recipe →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- POTATO FRY -->
+
+        <article class="home-card">
+
+            <img
+                src="https://i.pinimg.com/1200x/c2/d1/25/c2d12522ae2991c4cae37ef6d93a1d5e.jpg"
+                alt="Potato Fry"
+            >
+
+            <div class="card-content">
+
+                <span class="tag">VEG</span>
+
+                <h3>🥔 Potato Fry</h3>
+
+                <p>
+                    Quick potato recipe for everyone.
+                </p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱️ 15 min</span>
+
+                    <span>⭐ Easy</span>
+
+                </div>
+
+                <a href="veg.html" class="view-btn">
+                    View Recipe →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- EGG OMELETTE -->
+
+        <article class="home-card">
+
+            <img
+                src="https://i.pinimg.com/736x/09/6d/51/096d51832a2cd8b701cf22849eb4f437.jpg"
+                alt="Egg Omelette"
+            >
+
+            <div class="card-content">
+
+                <span class="tag nonveg-tag">
+                    NON-VEG
+                </span>
+
+                <h3>🍳 Egg Omelette</h3>
+
+                <p>
+                    Perfect for a quick breakfast.
+                </p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱️ 10 min</span>
+
+                    <span>⭐ Easy</span>
+
+                </div>
+
+                <a href="nonveg.html" class="view-btn">
+                    View Recipe →
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- DISCOVER -->
+
+<section class="discover">
+
+    <div class="section-title">
+
+        <h2>✨ Explore Student Kitchen</h2>
+
+    </div>
+
+
+    <div class="discover-grid">
+
+
+        <a href="veg.html">
+
+            <span>🥗</span>
+
+            <strong>Veg Recipes</strong>
+
+            <small>
+                Healthy vegetarian recipes
+            </small>
+
+        </a>
+
+
+        <a href="nonveg.html">
+
+            <span>🍗</span>
+
+            <strong>Non-Veg Recipes</strong>
+
+            <small>
+                Chicken, egg and more
+            </small>
+
+        </a>
+
+
+        <a href="grocery.html">
+
+            <span>🛒</span>
+
+            <strong>Grocery Guide</strong>
+
+            <small>
+                Identify groceries and find recipes
+            </small>
+
+        </a>
+
+
+        <a href="tips.html">
+
+            <span>💡</span>
+
+            <strong>Cooking Tips</strong>
+
+            <small>
+                Useful cooking knowledge
+            </small>
+
+        </a>
+
+
+    </div>
+
+</section>
+```
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+```
+<h3>🍳 Student Kitchen</h3>
+
+<p>
+    Good food starts with a good idea ❤️
+</p>
+```
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
